@@ -32,6 +32,12 @@ rails new rogs_on_rails --database=postgresql
 rake db:create db:migrate
 ```
 
+* Looks like we need a controller.
+
+```
+rails generate controller logs
+```
+
 * Set up Heroku connection:
 
 ```
