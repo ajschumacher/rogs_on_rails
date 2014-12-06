@@ -27,7 +27,7 @@ rails new rogs_on_rails --database=postgresql
 ```
 
 * Get the database stuff going.
-  
+
 ```
 rake db:create db:migrate
 ```
