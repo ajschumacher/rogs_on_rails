@@ -20,6 +20,7 @@ psql # connected!
 ```
 sudo su
 env ARCHFLAGS="-arch x86_64" gem install pg
+exit
 ```
 
 * Make the Rails scaffolds for a new app.
