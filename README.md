@@ -1,9 +1,6 @@
 # Setting up rogs_on_rails
 
-This is how I made this thing, which is different from how to run it
-starting from the current state of the repo. These are my notes on
-starting from scratch to get a minimal Ruby on Rails app on Heroku
-with PostgreSQL, using my Mac.
+This is how I made this thing, which is different from how to run it starting from the current state of the repo. These are my notes on starting from scratch to get a minimal Ruby on Rails app on Heroku with PostgreSQL, using my Mac. I'm mostly following the example of [Heroku's documenation](https://devcenter.heroku.com/articles/getting-started-with-rails4).
 
 * Installing Postgres on my Mac. (I looked at these [very detailed directions](https://www.codefellows.org/blog/three-battle-tested-ways-to-install-postgresql) but already had much of it done, so my steps are shorter.)
 
@@ -27,4 +24,16 @@ exit
 
 ```
 rails new rogs_on_rails --database=postgresql
+```
+
+* Get the database stuff going.
+  
+```
+rake db:create db:migrate
+```
+
+* Set up Heroku connection:
+
+```
+heroku create rogs-on-rails
 ```
