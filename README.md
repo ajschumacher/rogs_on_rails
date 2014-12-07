@@ -29,20 +29,20 @@ rails new rogs_on_rails --database=postgresql
 * Get the database stuff going.
 
 ```
-rake db:create db:migrate
+rake db:create
 ```
 
 * Looks like we need a controller.
 
 ```
 rails generate controller logs
-rake db:migrate
 ```
 
-* Oh and maybe something for the database.
+* Oh and maybe something for the database. The command will get a migration started; then add `t.timestamps`.
 
 ```
 rails generate migration CreateLogs entry:text
+rake db:migrate
 ```
 
 * Set up Heroku connection:
