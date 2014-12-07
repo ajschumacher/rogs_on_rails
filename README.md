@@ -36,6 +36,13 @@ rake db:create db:migrate
 
 ```
 rails generate controller logs
+rake db:migrate
+```
+
+* Oh and maybe something for the database.
+
+```
+rails generate migration CreateLogs entry:text
 ```
 
 * Set up Heroku connection:
