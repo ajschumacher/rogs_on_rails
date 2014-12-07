@@ -1,6 +1,6 @@
 class LogsController < ApplicationController
 
-  protect_from_forgery except: :index
+  skip_before_filter :verify_authenticity_token
 
   def create
     new_log = Log.new(entry: request.raw_post)
