@@ -50,3 +50,5 @@ rake db:migrate
 ```
 heroku create rogs-on-rails
 ```
+
+And so on!
