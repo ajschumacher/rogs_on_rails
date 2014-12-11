@@ -1,3 +1,16 @@
+# Using rogs_on_rails
+
+Log messages with anything that can send an HTTP POST request. In JavaScript, this function will do it asynchronously, fire and forget:
+
+```javascript
+var log = function(message) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("POST", "http://rogs-on-rails.herokuapp.com/", true);
+  xmlhttp.send(message);
+};
+```
+
+
 # Setting up rogs_on_rails
 
 This is how I made this thing, which is different from how to run it starting from the current state of the repo. These are my notes on starting from scratch to get a minimal Ruby on Rails app on Heroku with PostgreSQL, using my Mac. I'm mostly following the example of [Heroku's documenation](https://devcenter.heroku.com/articles/getting-started-with-rails4).
